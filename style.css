@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    background: #e2e2e2;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 9%;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 450;
+    margin-left: 2.5rem;
+    color: #000000;
+}
+
+#menu {
+    font-style: 2.7rem;
+    color: #000000;
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    max-width: 65rem;
+}
+
+.text-content h4{
+    font-size: 5.6rem;
+    /*line-height: 1.2rem;*/
+}
+
+.text-content h5 {
+    font-size: 3.2rem;
+    color: #777;
+}
+
+.text-content p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.social-media {
+    margin-top: 2rem;
+}
+
+.social-media i {
+    display: inline-flex;
+    font-size: 2.5rem;
+    color: #424242;
+    border: 0.2rem solid #424242;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.social-media i:hover {
+    background: #424242;
+    color: #e2e2e2;
+    box-shadow: 0 0 5px #000000;
+}
+
+.btn {
+    width: 15rem;
+    height: 5rem;
+    margin-top: 2rem;
+    background: #e2e2e2;
+    color: #e2e2e2;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    color: #424242;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #424242;
+    z-index: -1;
+    transition: 0.7s ease;
+}
+
+.btn:hover::before {
+    width: 0;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #424242;
+    z-index: -1;
+    transition: 0.7s ease;
+}
+
+.btn:hover::after {
+    width: 0;
+}
+
+.image-cover {
+    width: 40rem;
+    height: 100%;
+}
+
+.image {
+    height: 40rem;
+    width: 100%;
+    background: url('Myphoto.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid #000000;
+    position: relative;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 104%;
+    width: 104%;
+    border: 8px solid #e2e2e2;
+    border-radius: 50%;
+}
+
+.background {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 40rem;
+    background: #424242;
+    z-index: -1;
+}
+
